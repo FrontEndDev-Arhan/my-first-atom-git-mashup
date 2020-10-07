@@ -1,0 +1,1 @@
+Great, you have the content through Ajax now.
