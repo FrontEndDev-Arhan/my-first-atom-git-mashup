@@ -1,21 +1,21 @@
 // 'use strict';
 //
-// let output = '';
-// function        getText() {
-//   let xhr = new XMLHttpRequest();
-//   xhr.onreadystatechange = function() {
-//     if( this.status === 200 && this.readyState == 4 ) {
-//       let response = this.responseText;
-//       let responseHeaders = this.getAllResponseHeaders();
-//       output += `<p>${response} ${responseHeaders}</p>`;
-//     }
-//     document.getElementById('get-text').innerHTML = output;
-//   }
-//
-//   xhr.open('GET', './simpleText.txt', true);
-//   xhr.send();
-// }
-//
+let output = '';
+function        getText() {
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if( this.status === 200 && this.readyState == 4 ) {
+      let response = this.responseText;
+      let responseHeaders = this.getAllResponseHeaders();
+      output += `<p>${response} ${responseHeaders}</p>`;
+    }
+    document.getElementById('get-text').innerHTML = output;
+  }
+
+  xhr.open('GET', './simpleText.txt', true);
+  xhr.send();
+}
+
 // function task(message) {
 //     // emulate time consuming task
 //     let n = 10000000000;
@@ -66,6 +66,7 @@
 document.getElementById('button1').onclick = function() {
   createButton();
 }
+// TODO: DO A FOR LOOP
 
 // keep creating a button every 3 seconds and keep deleting it every 1.5 seconds
 const createButton = (function() {
