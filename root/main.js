@@ -12,7 +12,7 @@ function        getText() {
     document.getElementById('get-text').innerHTML = output;
   }
 
-  xhr.open('GET', './simpleText.txt', true);
+  xhr.open('GET', './simpleorgText.txt', true);
   xhr.send();
 }
 
@@ -63,27 +63,27 @@ function        getText() {
 //   console.log(JSON.stringify({ key2: 'prop' }));
 // }
 
-document.getElementById('button1').onclick = function() {
-  createButton();
-}
-// TODO: DO A FOR LOOP
-
-// keep creating a button every 3 seconds and keep deleting it every 1.5 seconds
-const createButton = (function() {
-  let btn = document.createElement('BUTTON');
-  btn.innerHTML = 'button to click';
-  btn.setAttribute('class', 'button');
-  document.body.appendChild(btn);
-  let buttons = document.getElementsByClassName('button');
-  return function() {
-      for(let i = 0; i <= 10; i++) {
-          let btn = document.createElement('BUTTON');
-          btn.innerHTML = 'button to click' + ' ' + i;
-          btn.setAttribute('class', 'button');
-          document.body.appendChild(btn);
-          setInterval(() => buttons[i].remove(), 2000);
-    }
-  }})();
+// document.getElementById('button1').onclick = function() {
+//   createButton();
+// }
+// // TODO: DO A FOR LOOP
+//
+// // keep creating a button every 3 seconds and keep deleting it every 1.5 seconds
+// const createButton = (function() {
+//   let btn = document.createElement('BUTTON');
+//   btn.innerHTML = 'button to click';
+//   btn.setAttribute('class', 'button');
+//   document.body.appendChild(btn);
+//   let buttons = document.getElementsByClassName('button');
+//   return function() {
+//       for(let i = 0; i <= 10; i++) {
+//           let btn = document.createElement('BUTTON');
+//           btn.innerHTML = 'button to click' + ' ' + i;
+//           btn.setAttribute('class', 'button');
+//           document.body.appendChild(btn);
+//           setInterval(() => buttons[i].remove(), 2000);
+//     }
+//   }})();
 // let button = document.getElementById('button');
 // button.onclick = function() {
 // document.getElementsByTagName('h1').innerText = 'simple heading'; }
