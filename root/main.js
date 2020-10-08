@@ -1,5 +1,7 @@
 // 'use strict';
-//
+function onmousedown() {
+  console.log('it is a simple function that you just declared on the top of your script main.js');
+}
 let output = '';
 function        getText() {
   let xhr = new XMLHttpRequest();
