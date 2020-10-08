@@ -1,7 +1,8 @@
 // 'use strict';
+let i = 3;
 try {
-  let i = 1;
-  if(!i === 2) throw RangeError('do you know how big a number 2, it is a range error you human');
+  if(i === 3)
+  throw new RangeError('do you know how big a number 2, it is a range error you human');
 } catch (e) {
   console.log('personal custom made error: ' + e);
 } finally {
@@ -29,6 +30,7 @@ function        getText() {
   xhr.send();
 }
 
+consol.log('wrong name of console'); // check how breakpoints works on uncaught exceptions
 // function task(message) {
 //     // emulate time consuming task
 //     let n = 10000000000;
