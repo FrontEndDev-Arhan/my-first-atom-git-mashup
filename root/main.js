@@ -1,7 +1,18 @@
 // 'use strict';
+try {
+  let i = 1;
+  if(!i === 2) throw RangeError('do you know how big a number 2, it is a range error you human');
+} catch (e) {
+  console.log('personal custom made error: ' + e);
+} finally {
+  console.log('do not bother me, i always run - i am finally.');
+}
 function onmousedown() {
   console.log('it is a simple function that you just declared on the top of your script main.js');
 }
+debugger;
+onmousedown();
+
 let output = '';
 function        getText() {
   let xhr = new XMLHttpRequest();
