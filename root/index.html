@@ -49,6 +49,21 @@
       <button id="get-ajax" onclick='getText();'>get ajax text</button>
     </h3>
     <code>this is not a code though i am writing</code>
+    <!-- TODO: Practice event listener reakpoints -->
+    <button onclick="clickEventBreakpoint1();">clickEventBreakpoint1</button>
+    <button onmouseover="mouseoverEventBreakpoint1();">mouseoverEventBreakpoint1</button>
+    <button onmo="mouseoutEventBreakpoint1();">mouseoutEventBreakpoint1</button>
     <script src="./main.js"></script>
+    <script>
+      function clickEventBreakpoint1() {
+        console.log('1: were you stopped before this statement was logged?');
+      }
+      function clickEventBreakpoint3() {
+        console.log('2: were you stopped before this statement was logged?');
+      }
+      function clickEventBreakpoint3() {
+        console.log('3: were you stopped before this statement was logged?');
+      }
+    </script>
   </body>
 </html>

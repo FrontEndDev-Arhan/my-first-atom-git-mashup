@@ -12,7 +12,7 @@ function        getText() {
     document.getElementById('get-text').innerHTML = output;
   }
 
-  xhr.open('GET', './simpleorgText.txt', true);
+  xhr.open('GET', './simpleText.txt', true);
   xhr.send();
 }
 
