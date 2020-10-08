@@ -1,4 +1,9 @@
 // 'use strict';
+function sum(a,b) {
+    return a + b;
+}
+debug(sum);
+sum(1,3);
 let i = 3;
 try {
   if(i === 3)
