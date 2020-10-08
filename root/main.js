@@ -1,18 +1,19 @@
 // 'use strict';
-function sum(a,b) {
-    return a + b;
+function sum(a, b) {
+  return a + b;
 }
 debug(sum);
-sum(1,3);
+sum(1, 3);
 let i = 3;
 try {
-  if(i === 3)
-  throw new RangeError('do you know how big a number 2, it is a range error you human');
+  if (i === 3)
+    throw new RangeError('do you know how big a number 2, it is a range error you human');
 } catch (e) {
   console.log('personal custom made error: ' + e);
 } finally {
   console.log('do not bother me, i always run - i am finally.');
 }
+
 function onmousedown() {
   console.log('it is a simple function that you just declared on the top of your script main.js');
 }
@@ -20,10 +21,11 @@ debugger;
 onmousedown();
 
 let output = '';
-function        getText() {
+
+function getText() {
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
-    if( this.status === 200 && this.readyState == 4 ) {
+    if (this.status === 200 && this.readyState == 4) {
       let response = this.responseText;
       let responseHeaders = this.getAllResponseHeaders();
       output += `<p>${response} ${responseHeaders}</p>`;
